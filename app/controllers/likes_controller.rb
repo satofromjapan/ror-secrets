@@ -1,6 +1,5 @@
 class LikesController < ApplicationController
   def create
-    binding.pry
     @like = Like.create(like_params)
     redirect_to "/secrets"
   end
