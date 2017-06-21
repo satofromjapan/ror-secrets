@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       flash[:errors] = ["can't be blank"]
       redirect_to "/users/new"
     else
-      redirect_to "/sessions/new"
+      redirect_to "/users/#{u.id}"
 
     end
   end
